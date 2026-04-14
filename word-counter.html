@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+  <div class="logo">SimpleTools</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="word-counter.html">Word Counter</a>
+    <a href="age-calculator.html">Age Calculator</a>
+    <a href="gpa-calculator.html">GPA Calculator</a>
+
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</nav><br>
+<h1>Word Counter Tool</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+        <div class="tool-actions">
+            <button onclick="copyText()">Copy</button>
+            <button onclick="clearText()">Clear</button>
+        </div>
+      <label class="input-label">Enter your text below</label>
+      <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+
+      <div class="stats">
+
+        <div class="stat-box">
+            <div class="stat-title">Words</div>
+            <div class="stat-value" id="words">0</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-title">Characters</div>
+            <div class="stat-value" id="chars">0</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-title">Sentences</div>
+            <div class="stat-value" id="sentences">0</div>
+        </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="ad-box">
+  Advertisement
+</div>
+
+    <footer>
+  <p>© 2026 SimpleTools</p>
+
+  <div class="footer-links">
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+  <script src="word-counter.js"></script>
+
+</body>
+</html>
