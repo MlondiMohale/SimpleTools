@@ -55,6 +55,8 @@ header a {
 
 /* INPUTS */
 #inputs {
+  padding: 12px;
+  border-radius: 10px;
   display: grid;
   gap: 10px;
 }
@@ -66,6 +68,8 @@ header a {
   background: #0b1220;
   color: var(--text);
   font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* BUTTON */
@@ -123,6 +127,8 @@ header a {
   background: #0b1220;
   color: var(--text);
   font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
 
   outline: none;
   transition: 0.2s ease;
@@ -212,5 +218,11 @@ footer {
 
   .nav-links a {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
   }
 }
